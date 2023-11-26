@@ -1,0 +1,89 @@
+.nube1{
+    position: absolute;
+    bottom: 10px;
+    animation: nube1 40s infinite linear;
+    z-index: 2;
+}
+
+.portada{
+
+    background-color: var(--rosa);
+    position: relative;
+    height: 600px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+
+    & h1{
+        font-family: var(--resaltar);
+        color: white;
+        font-size: 8em;
+        text-shadow: 6px 6px 0 var(--naranja), -2px -2px 0 var(--naranja), 2px -2px 0 var(--naranja), -2px 2px 0 var(--naranja),
+        0px 5px 4px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        z-index: 11;
+    }
+
+}
+
+img.d1{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+footer{
+    background-color: var(--naranja);
+
+    & img.d2{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.foot1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    & ul li{
+        list-style: none;
+    }
+    & a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        &:hover{
+            color: #313131;
+        }
+    }
+    & ion-icon{
+        display: flexbox;
+        font-size: 30px;
+        gap: 10px;
+        margin-top: 40px;
+    }
+}
+
+.foot1-2{
+    display: grid;
+    justify-items: right;
+
+    & p{
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.foot2{
+    color: white;
+    display: grid;
+    justify-content: center;
+    padding: 20px 0;
+
+    & p{
+        display: flex;
+        align-items: center;
+    }
+}
