@@ -87,3 +87,59 @@ footer{
         align-items: center;
     }
 }
+
+/*=====RESPONSIVE=====*/
+
+/*PORTÁTILES*/
+
+@media screen and (max-width: 1280px){
+    .foot1-2 img{
+        width: 240px;
+    }
+}
+
+/*TABLET*/
+@media screen and (max-width: 1080px){
+    .portada{
+        & h1{
+            font-size: 6em;
+        }
+    }
+}
+
+/*=====CELULAR=====*/
+
+@media screen and (max-width: 780px){
+    .margen{
+        max-width: 85%;
+        margin: 0 auto;
+    }
+    
+
+ /*PORTADA*/
+    .portada{
+        & h1{
+            font-size: 4em;
+            text-shadow: 4px 4px 0 var(--naranja), -2px -2px 0 var(--naranja), 2px -2px 0 var(--naranja), -2px 2px 0 var(--naranja),
+            0px 5px 4px rgba(0, 0, 0, 0.5);
+        }
+        & .nube1{
+            width: 200px;
+        }
+        & .nube2{
+            width: 200px;
+        }
+    }
+
+    .foot1{
+        grid-template-columns: 100%;
+        justify-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .foot1-2{
+        justify-items: center;
+    }
+
+}

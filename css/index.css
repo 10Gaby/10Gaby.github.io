@@ -230,7 +230,7 @@ footer{
             color: #313131;
         }
     }
-    & ion-icon .social{
+    & .social ion-icon{
         display: flexbox;
         font-size: 30px;
         gap: 10px;
