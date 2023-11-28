@@ -87,14 +87,14 @@ h2{
 /* Menú */
 nav {
   mix-blend-mode: difference;
-  z-index: 100;
+  z-index: 500;
 }
 
 nav ul {
   position: fixed;
   top: 60px;
   right: 5px;
-  height: 35px;
+  height: 25px; /* Ajusta el tamaño del menú */
   visibility: hidden;
   pointer-events: none;
   list-style: none;
