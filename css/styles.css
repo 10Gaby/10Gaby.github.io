@@ -95,7 +95,7 @@ nav ul {
   position: fixed;
   top: 60px;
   right: 5px;
-  height: 25px; /* Ajusta el tamaño del menú */
+  height: 85px;
   visibility: hidden;
   pointer-events: none;
   list-style: none;
