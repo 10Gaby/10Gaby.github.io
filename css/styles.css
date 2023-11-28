@@ -88,6 +88,7 @@ h2{
 nav {
   mix-blend-mode: difference;
   z-index: 500;
+  position: relative;  
 }
 
 nav ul {
