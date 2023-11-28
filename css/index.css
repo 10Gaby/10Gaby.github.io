@@ -17,6 +17,7 @@
     align-content: center;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
 .portada .logo{

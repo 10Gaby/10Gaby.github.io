@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="shortcut icon" href="img/Favicon.svg" type="image/x-icon">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 
     <!--TIPOGRAFÍAS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +42,26 @@
 <body>
 
     <!--Menú-->
-    <header></header>
+    <header>
+        <div class="container__menu">
+            <div class="logo">
+                <img src="images/logo-magtimus-v2.3-1.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fas fa-bars" id="btn_menu"></i>
+                <div id="back_menu"></div>
+                <nav id="nav">
+                    <img src="images/logo-magtimus-v2.3-1.png" alt="">
+                    <ul>
+                        <li><a href="#" id="selected">Inicio</a></li>
+                        <li><a href="revistas.html">Revistas</a></li>
+                        <li><a href="#">Aplicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <!--Portada-->
     <section class="portada">
@@ -172,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="contacto">
+            <div class="contacto" id="contacto">
                 <h2>Contáctanos</h2>
 
                 <form action="https://formspree.io/f/moqoojrk" method="POST">
@@ -209,6 +231,7 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+<script src="js/script.js"></script>
 
 <script>
     AOS.init();
