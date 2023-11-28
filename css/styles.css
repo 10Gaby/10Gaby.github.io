@@ -106,7 +106,7 @@ nav ul {
 }
 
 nav ul li {
-  font: bold 1.5rem "Work Sans", "Arial Black", Gadget, sans-serif;
+  font: bold 1rem "Work Sans", "Arial Black", Gadget, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 1em;
