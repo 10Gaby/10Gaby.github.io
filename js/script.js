@@ -18,6 +18,23 @@ function ocultar_menu(){
 }
 
 
+// ...
+
+// Obtén todos los elementos <a> dentro del menú
+var menuLinks = document.querySelectorAll("#nav ul a");
+
+// Agrega un evento de clic a cada enlace del menú
+menuLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        // Cierra el menú al hacer clic en un enlace
+        ocultar_menu();
+    });
+});
+
+// ...
+
+
+
 /* 
 
 var nav = document.getElementById('nav');
