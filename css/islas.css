@@ -134,14 +134,13 @@ img.divisor{
 
 .tristeza{
     & img.personaje{
-        margin-bottom: -250px;
+        margin-bottom: -10px;
         animation: flotar 4s infinite;
         z-index: 3;
     }
 
     & img.nube{
-        position: absolute;
-        top: 20px;
+        margin-bottom: -150px;
         z-index: 1;
         animation: movimiento-horizontal 7s infinite;
     }
@@ -175,13 +174,13 @@ img.divisor{
 
 .enojo{
     & img.personaje{
-        margin-bottom: -450px;
+        margin-bottom: -220px;
         animation: temblorHorizontal 1s ease-in-out infinite;
         z-index: 3;
     }
 
     & img.rayo{
-        position: absolute;
+        margin-bottom: -70px;
         z-index: 1;
         top: 7%;
         animation: trueno 0.5s ease-in-out infinite;
@@ -190,7 +189,7 @@ img.divisor{
 
 .miedo{
     & img.personaje{
-        margin-bottom: -70%;
+        margin-bottom: -430px;
         animation: temblorHorizontal 1s ease-in-out infinite;
         z-index: 3;
     }
