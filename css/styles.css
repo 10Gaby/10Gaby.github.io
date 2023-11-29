@@ -107,7 +107,7 @@ h2{
     z-index: 5;
 }
 
-/* Menú */
+/* MENÚ PENDIENTE
 nav {
   mix-blend-mode: difference;
   z-index: 500;
@@ -189,3 +189,5 @@ nav.active ul {
 .active .nav-icon span {
   transform: rotate(90deg);
 }
+
+*/
