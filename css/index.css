@@ -11,7 +11,7 @@
     width: 100vw;
     height: 100vh;
     background-image: url(../img/Portada.svg);
-    background-size: contain;
+    background-size: cover;
 
     display: grid;
     align-content: center;
