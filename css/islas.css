@@ -97,6 +97,10 @@ img.divisor{
     right: -1px;
 }
 
+.divisor2{
+    display: none;
+}
+
 
 /*ALEGRÍA*/
 
@@ -192,5 +196,58 @@ img.divisor{
         margin-bottom: -430px;
         animation: temblorHorizontal 1s ease-in-out infinite;
         z-index: 3;
+    }
+}
+
+
+/*==============================RESPONSIVE==============================*/
+
+/*TABLETS*/
+@media screen and (max-width: 1080px){
+    .islas{
+        & h3{
+            font-family: var(--titulos);
+            font-size: 3em;
+        }
+    
+        & h2{
+            font-size: 6em;
+        }
+    }
+
+}
+
+
+/*CELULARES*/
+
+@media screen and (max-width: 780px){
+    .islas{
+        & h3{
+            font-family: var(--titulos);
+            font-size: 3em;
+        }
+    
+        & h2{
+            font-size: 5em;
+        }
+    }
+
+    .isla{
+        grid-template-columns: 1fr;
+        height: auto;
+
+        & div:nth-child(2){
+            padding: 50px 0;
+        }
+    }
+
+    img.divisor{
+        display: none;
+    }
+
+    .alegria, .enojo, .tristeza, .miedo{
+        & h2{
+            -webkit-text-stroke-width: 3px;
+        }    
     }
 }

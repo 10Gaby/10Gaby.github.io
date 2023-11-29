@@ -157,6 +157,13 @@ header{
     .menu #btn_menu:hover{
         background: rgba(255, 255, 255, 0.2);
     }
+
+    .header-islas{
+        & .menu{
+            background-color: rgba(0,0,0,0);
+        }
+        
+    }
 }
 
 
