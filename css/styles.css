@@ -107,6 +107,129 @@ h2{
     z-index: 5;
 }
 
+/*SHARE BUTTON*/
+
+.compartir {
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+
+  & button{
+    cursor: pointer;
+  }
+
+  & ion-icon{
+    font-size: 25px;
+  }
+
+  & a{
+    text-decoration: none;
+  }
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  
+  & button{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  }
+}
+
+
+.shareButton {
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  margin: 0.5rem;
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  transition: all 200ms;
+  position: relative;
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.shareButton:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.shareButton.main .share, .content .shareButton.main .close, .content .shareButton.main .check {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  -webkit-transition: all 150ms;
+  transition: all 150ms;
+}
+.shareButton.main .share, .content .shareButton.main.open .close, .content .shareButton.main.sent .check {
+  -webkit-transform: rotate(0) scale(1);
+          transform: rotate(0) scale(1);
+  opacity: 1;
+}
+.shareButton.main .close, .content .shareButton.main.open .share, .content .shareButton.main .check, .content .shareButton.main.sent .share {
+  opacity: 0;
+  -webkit-transform: rotate(90deg) scale(0);
+          transform: rotate(90deg) scale(0);
+}
+
+
+.shareButton, .shareButton.open {
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  padding: 1rem;
+  overflow: hidden;
+  outline: none;
+  margin: 0.5rem;
+  width: 24px;
+  height: 24px;
+  box-sizing: content-box;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  position: relative;
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.shareButton:hover, .shareButton.open:hover {
+  -webkit-transform: scale(1.1) translateY(-3px);
+          transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.yt, .shareButton.open.ig {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.tk, .shareButton.open.tk {
+  -webkit-transition-delay: 50ms;
+          transition-delay: 50ms;
+}
+
+.ig, .shareButton.open.yt {
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.yt, .tk, .ig {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 /* MENÚ PENDIENTE
 nav {
   mix-blend-mode: difference;
