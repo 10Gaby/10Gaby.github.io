@@ -1,0 +1,198 @@
+.islas{
+    & h3{
+        font-family: var(--titulos);
+        font-size: 4em;
+    }
+
+    & h2{
+        font-size: 8em;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0px 6px 5px rgba(0,0,0,.5);
+    }
+
+    & p{
+        font-weight: bold;
+    }
+}
+
+.isla{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    & div:nth-child(1){
+        height: 100vh;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+    }
+
+    & div:nth-child(2){
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.alegria{
+    position: relative;
+    color: var(--naranja);
+    
+    & h2{
+        -webkit-text-stroke: 5px var(--naranja);
+    }
+
+    & div:nth-child(1){
+        background-color: var(--amarillo);
+    }
+}
+
+.tristeza{
+    position: relative;
+    color: #29696B;
+
+    & h2{
+        -webkit-text-stroke: 5px #29696B;
+    }
+
+    & div:nth-child(1){
+        background-color: var(--azul);
+    }
+}
+
+.enojo{
+    position: relative;
+    color: #E05151;
+
+    & h2{
+        -webkit-text-stroke: 5px #E05151;
+    }
+
+    & div:nth-child(1){
+        background-color: var(--rosa);
+    }
+}
+
+.miedo{
+    position: relative;
+    color: #2B2B2B;
+
+    & h2{
+        -webkit-text-stroke: 5px #2B2B2B;
+    }
+    
+    & div:nth-child(1){
+        background-color: #65288F;
+    }
+}
+
+img.divisor{
+    position: absolute;
+    height: 100vh;
+    top: 0px;
+    right: -1px;
+}
+
+
+/*ALEGRÍA*/
+
+
+.alegria{
+    & img.personaje{
+        margin-bottom: -300px;
+        animation: flotar 4s infinite;
+    }
+
+    & img.sol{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+        animation: rotar 10s infinite;
+    }
+
+    & img.mariposa1{
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        animation: vuelo 3s infinite;
+    }
+}
+
+@keyframes movimiento-horizontal{
+    0% {
+      transform: translateX(50px);
+    }
+    50% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+
+.tristeza{
+    & img.personaje{
+        margin-bottom: -250px;
+        animation: flotar 4s infinite;
+        z-index: 3;
+    }
+
+    & img.nube{
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        animation: movimiento-horizontal 7s infinite;
+    }
+}
+
+@keyframes temblorHorizontal {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25%, 75% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+  }
+
+  @keyframes trueno {
+    0%, 100% {
+      opacity: 1;
+    }
+    25%, 75% {
+      opacity: 0.6;
+      color: #ffffff;
+    }
+    50% {
+      opacity: 0.5;
+      color: #ffe600;
+    }
+  }
+
+.enojo{
+    & img.personaje{
+        margin-bottom: -450px;
+        animation: temblorHorizontal 1s ease-in-out infinite;
+        z-index: 3;
+    }
+
+    & img.rayo{
+        position: absolute;
+        z-index: 1;
+        top: 7%;
+        animation: trueno 0.5s ease-in-out infinite;
+    }
+}
+
+.miedo{
+    & img.personaje{
+        margin-bottom: -70%;
+        animation: temblorHorizontal 1s ease-in-out infinite;
+        z-index: 3;
+    }
+}
